@@ -25,8 +25,56 @@ if (typeof jQuery === 'undefined') {
  * ======================================================================== */
 
 
+ $(document).ready(function() {
+     $('#dropdown1').click(function() {
+         $('#dropdownicon1').toggleClass("glyphicon-triangle-bottom").toggleClass("glyphicon-triangle-top");
+     });
+ });
+
+ $(document).ready(function() {
+     $('#dropdown2').click(function() {
+         $('#dropdownicon2').toggleClass("glyphicon-triangle-bottom").toggleClass("glyphicon-triangle-top");
+     });
+ });
+
+
 +function ($) {
   'use strict';
+
+  var getGif = function() {
+    var gif = [];
+    $('img').each(function() {
+      var data = $(this).data('alt');
+      gif.push(data);
+    });
+    return gif;
+  }
+  var gif = getGif();
+
+  var image = [];
+
+  $.each(gif, function(index) {
+    image[index]     = new Image();
+    image[index].src = gif[index];
+  });
+
+  $('figure').on('click', function() {
+
+  var $this   = $(this),
+          $index  = $this.index(),
+
+          $img    = $this.children('img'),
+          $imgSrc = $img.attr('src'),
+          $imgAlt = $img.attr('data-alt'),
+          $imgExt = $imgAlt.split('.');
+
+  if($imgExt[1] === 'gif') {
+      $img.attr('src', $img.data('alt')).attr('data-alt', $imgSrc);
+  } else {
+      $img.attr('src', $imgAlt).attr('data-alt', $img.data('alt'));
+  }
+
+});
 
   // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
   // ============================================================

@@ -12,9 +12,8 @@
     <meta name='description' content='Een gratis website maken is heel gemakkelijk. Doorloop de stappen op de JouwWeb educatie pagina om te leren werken met de website-builder.'>
     <meta name='theme-color' content='#3194d0'>
     <meta name='msapplication-TileColor' content='#f7f5f0'>
-
-    <link rel='stylesheet' href='sass/style.min.css'>
-
+    <link rel='stylesheet' href='sass/style.css'>
+    <link rel='stylesheet' href='external/fontawesome/css/font-awesome.min.css'>
     <script src='external/jquery/jquery-3.2.0.js'></script>
     <script src='external/bootstrap/javascripts/bootstrap.js'></script>
 </head>
@@ -22,168 +21,242 @@
 <body>
 
     <header>
-        <div class='row row--header'>
-            <div class='container container--header'>
-
-                <article class='col-xs-12 col-md-12'>
-                    <h1>Nog nooit een website gemaakt?</h1>
-                    <h3>Makkelijk te leren</h3>
-                </article>
-
-                <nav class='navbar navbar-default navbar-fixed-top'>
-                    <div class='container'>
-                        <ul class='nav navbar-nav'>
-                            <li class='active'><a href='#'>Home</a></li>
-                            <li><a href='#'>Docentenhandleiding</a></li>
-                            <li><a href='#'>Help</a></li>
-                            <button type="button" class="btn">Start nu</button>
-                        </ul>
+        <div class='layer'>
+            <nav class='navbar navbar-default'>
+                <div class='container'>
+                    <div class='row'>
+                        <div class='navbar-header col-xs-12 col-sm-8'>
+                            <h4><a class='navbar-brand' href=''><img class='logo' src='img/logo0.png'>JouwWeb</a></h4>
+                            <ul class='nav navbar-nav first'>
+                                <li class='active'><a href='#'>Instructies</a></li>
+                                <li><a href='#'>Docent</a></li>
+                                <li><a href='#'>Help</a></li>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='col-xs-12 col-sm-4'>
+                            <ul class='nav navbar-nav navbar-right'>
+                                <button style='margin-top: 8px;' type='submit' class='btn btn-success'>Starten</button>
+                            </ul>
+                        </div>
                     </div>
-                </nav>
-
+                </div>
+            </nav>
+            <div class='container-fluid'>
+                <article class='header-title'>
+                    <h1>JouwWeb op school</h1>
+                    <h3>Websites leren maken met de website-builder</h3>
+                </article>
             </div>
         </div>
     </header>
 
-    <section class='section section-colored'>
+    <section class='section'>
         <div class='container'>
-            <div class='row'>
 
+            <div class='row'>
                 <article class='col-xs-12 col-md-6'>
-                    <h2>Nog nooit een website gemaakt?</h2>
+                    <h4 class='article-header'>Nog nooit een website?</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
                 </article>
 
                 <article class='col-xs-12 col-md-6'>
-                    <h2>Nog nooit een website gemaakt?</h2>
+                    <h4 class='article-header'>Nooit een website gemaakt?</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </article>
+            </div>
 
-                <div class="container container--embed">
+            <div class='row'>
+
+                <div class='container-fluid container-embed'>
                     <div class='col-xs-12 col-md-12 embed-responsive embed-responsive-16by9'>
                         <iframe class='embed-responsive-item' src='https://www.youtube.com/embed/jXM4900slMo' frameborder='0' allowfullscreen></iframe>
                     </div>
                 </div>
 
+                <!-- <article class='col-xs-12 col-md-6'>
+                  <h4 class='article-header'>Nooit een website gemaakt?</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </article> -->
             </div>
 
             <div class='row'>
+                <div class='col-xs-1 col-md-3'></div>
+                <h2 class='section-header-start col-xs-10 col-md-6'>1 Beginnen met JouwWeb</h2>
+                <div class='col-xs-1 col-md-3'></div>
+            </div>
 
+            <div class='row'>
                 <article class='col-xs-12 col-md-6'>
-                    <h2>Nog nooit een website gemaakt?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <img class='img-responsive' alt='' src='img/kiezen5.png'>
+                    <h4 class='article-header'>Nog nooit een website?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
 
-                    <button type='button' class='btn btn-info-dropdown' data-toggle='collapse' data-target='#demo'><span class="glyphicon glyphicon-triangle-bottom"></span>Simple collapsible</button>
-                    <div id='demo' class='collapse'>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <div class='panel panel-success'>
+                        <div id='dropdown1' class='panel-heading panel-heading--clickable collapsed' data-toggle='collapse' data-target='#group-icon-collapse1'>
+                            <span id='dropdownicon1' class='glyphicon glyphicon-triangle-bottom'></span> Opdracht 1
+                        </div>
+                        <div id='group-icon-collapse1' class='panel-collapse collapse'>
+                            <div class='content--opdracht'>
+                                <h5>Opdracht Lorem ipsum</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <ol>
+                                    <li>Lorem ipsum dolor</li>
+                                    <li>Lorem ipsum dolorconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+                                    <li>Lorem ipsum dolor</li>
+                                    <li>Lorem ipsum dolorconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+                                    <li>Lorem ipsum dolor</li>
+                                </ol>
+                            </div>
+                        </div>
                     </div>
-
                 </article>
 
+                <article class='col-xs-12 col-md-6'>
+                    <img class='img-responsive' alt='' src='img/kiezen5.png'>
+                    <h4 class='article-header'>Nooit een website gemaakt?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                    <div class='panel panel-success'>
+                        <div id='dropdown2' class='panel-heading panel-heading--clickable collapsed' data-toggle='collapse' data-target='#group-icon-collapse2'>
+                            <span id='dropdownicon2' class='glyphicon glyphicon-triangle-bottom'></span> Opdracht 2
+                        </div>
+                        <div id='group-icon-collapse2' class='panel-collapse collapse'>
+                            <div class='content--opdracht'>
+                                <h5>Opdracht Lorem ipsum</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <ol>
+                                    <li>Lorem ipsum dolor</li>
+                                    <li>Lorem ipsum dolorconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+                                    <li>Lorem ipsum dolor</li>
+                                    <li>Lorem ipsum dolorconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+                                    <li>Lorem ipsum dolor</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
 
             <article class='col-xs-12 col-md-6'>
-                <h2 class='page-header'>Nog nooit een website gemaakt?</h2>
+                <h4 class='article-header'>Nog nooit een website?</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-
-                <div class='opdracht opdracht--tip opdracht--gesloten'>
-                    <div class='opdracht__title'>
-                        Title
-                    </div>
-                    <div class='opdracht__inhoud'>
-                        <ol>
-                            <li>Doe dit</li>
-                            <li>Doe dat</li>
-                            <li>En tot slot dat!</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class='opdracht opdracht--tip opdracht--gesloten'>
-                    <div class='opdracht__title'>
-                        Title
-                    </div>
-                    <div class='opdracht__inhoud'>
-                        <ol>
-                            <li>Doe dit</li>
-                            <li>Doe dat</li>
-                            <li>En tot slot dat!</li>
-                        </ol>
-                    </div>
-                </div>
             </article>
 
             <article class='col-xs-12 col-md-6'>
-                <h2>Nog nooit een website gemaakt?</h2>
+                <h4 class='article-header'>Nooit een website gemaakt?</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </article>
 
+        </div>
+    </section>
 
+    <section class='section-colored'>
+        <div class='container'>
 
+            <div class='row'>
+                <div class='col-xs-1 col-md-3'></div>
+                <h2 class='section-header col-xs-10 col-md-6'>2 Beginnen met JouwWeb</h2>
+                <div class='col-xs-1 col-md-3'></div>
+            </div>
+
+            <div class='row'>
+                <article class='col-xs-12 col-md-6'>
+                    <img class='img-responsive' alt='' src='img/kiezen5.png'>
+                    <h4 class='article-header'>Nog nooit een website?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </article>
+
+                <article class='col-xs-12 col-md-6'>
+                    <img class='img-responsive' alt='' src='img/kiezen5.png'>
+                    <h4 class='article-header'>Nog nooit een website?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </article>
+            </div>
+            <div class='row'>
+                <article class='col-xs-12 col-md-6'>
+                    <img class='img-responsive' alt='' src='img/kiezen5.png'>
+                    <h4 class='article-header'>Nog nooit een website?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </article>
+
+                <article class='col-xs-12 col-md-6'>
+                    <img class='img-responsive' alt='' src='img/kiezen5.png'>
+                    <h4 class='article-header'>Nog nooit een website?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </article>
+            </div>
         </div>
     </section>
 
     <section class='section'>
         <div class='container'>
+
+            <div class='row'>
+                <div class='col-xs-1 col-md-3'></div>
+                <h2 class='section-header col-xs-10 col-md-6'>3 Beginnen met JouwWeb</h2>
+                <div class='col-xs-1 col-md-3'></div>
+            </div>
+
+            <div class='row'>
+                <div class='col-md-2'>
+                </div>
+                <article class='col-xs-12 col-md-8'>
+                    <img class='img-responsive' alt='' src='img/kiezen5.png'>
+                    <h4 class='article-header'>Nog nooit een website?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </article>
+                <div class='col-md-2'>
+                </div>
+            </div>
+
             <div class='row'>
                 <article class='col-xs-12 col-md-6'>
-                    <img class='col-xs-12 col-md-12' alt='' src='img/Kiezen3.png'>
-                    <h2>Nog nooit een website gemaakt?</h2>
+                    <img class='img-responsive' alt='' src='img/kiezen5.png'>
+                    <h4 class='article-header'>Nog nooit een website?</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </article>
-
                 <article class='col-xs-12 col-md-6'>
-                    <img class='col-xs-12 col-md-12' alt='' src='img/Kiezen3.png'>
-                    <h2>Nog nooit een website gemaakt?</h2>
+                    <img class='img-responsive' alt='' src='img/kiezen5.png'>
+                    <h4 class='article-header'>Nog nooit een website?</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </article>
+                <div class='container container--embed'>
+                    <div class='col-xs-12 col-md-12 embed-responsive embed-responsive-16by9'>
+                        <iframe class='embed-responsive-item' src='https://www.youtube.com/embed/jXM4900slMo' frameborder='0' allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
-            <div class='row'>
-                <article class='col-xs-12 col-md-6'>
-                    <img class='col-xs-12 col-md-12' alt='' src='img/Kiezen3.png'>
-                    <h2>Nog nooit een website gemaakt?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                </article>
 
-                <article class='col-xs-12 col-md-6'>
-                    <img class='col-xs-12 col-md-12' alt='' src='img/Kiezen3.png'>
-                    <h2>Nog nooit een website gemaakt?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                </article>
-            </div>
+            <article class='col-xs-12 col-md-6'>
+                <h4 class='article-header'>Nooit een website gemaakt?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </article>
+
+            <article class='col-xs-12 col-md-6'>
+                <h4 class='article-header'>Nooit een website gemaakt?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </article>
+
         </div>
     </section>
 
-<footer></footer>
-    <!-- <section class='begin'>
-        <h2>How are yous?</h2>
-        <p>How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How
-            are yous?How are yous?How are yous?</p>
-    </section>
-
-    <section class='editor'>
-        <h2>How are yous?</h2>
-        <p>How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How
-            are yous?How are yous?How are yous?</p>
-    </section>
-
-    <section class='design'>
-        <h2>How are yous?</h2>
-        <p>How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How
-            are yous?How are yous?How are yous?</p>
-    </section>
-
-    <section class='test'>
-        <h2>How are yous?</h2>
-        <p>How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How
-            are yous?How are yous?How are yous?</p>
-    </section>
-
-    <section class='media'>
-        <h2>How are yous?</h2>
-        <p>How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How are yous?How
-            are yous?How are yous?How are yous?</p>
-    </section> -->
+    <footer>
+      <div class='container'>
+                  <ul class='footer-list footer-list-social'>
+                      <li>© Jouwweb <span class='hidden-xs'>- Torenallee 20 - 5617 BC Eindhoven</span></li>
+                      <li><a class='facebook-link' href='https://www.facebook.com/JouwWeb'><i class='fa fa-facebook'></i></a></li>
+                      <li><a class='twitter-link' href='https://twitter.com/JouwWeb'><i class='fa fa-twitter'></i></a></li>
+                  </ul>
+                  <ul class='footer-list footer-list-links'>
+                      <li>|  <a href='http://help.jouwweb.nl/help'>Help</a></li>
+                      <li>|  <a href='http://help.jouwweb.nl/contact'>Contact</a></li>
+                      <li>|  <a href='http://help.jouwweb.nl/over-ons'>Over ons</a></li>
+                      <li>|  <a href='http://help.jouwweb.nl/vacatures'>Vacatures</a></li>
+                      <li>|  <a href='http://help.jouwweb.nl/algemene-voorwaarden'>Voorwaarden</a></li>
+                  </ul>
+              </div>
+    </footer>
 
 </body>
 

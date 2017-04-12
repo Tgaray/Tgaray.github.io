@@ -86,10 +86,7 @@ header {
 }
 
 .btn {
-    border: 0;
     border-radius: 3px;
-    outline: 0 !important;
-    transition: background 250ms ease, box-shadow 250ms ease, border 250ms ease;
 }
 
 .btn-success {
@@ -108,7 +105,7 @@ section {
     padding: 60px 0;
 }
 
-.section-header-start {
+.section-header-first {
     margin-top: 40px;
     margin-bottom: 60px;
     border-bottom: 1px solid #eeeeee;
@@ -126,14 +123,14 @@ section {
     margin-top: 20px;
 }
 
+.section-colored {
+    background: #f2eee6;
+
 .article-header {
     padding-bottom: 10px;
     margin: 20px 0 8px;
     border-bottom: 1px solid #eeeeee;
 }
-
-.section-colored {
-    background: #f2eee6;
 
     .article-header {
         border-bottom: 1px solid #fff;

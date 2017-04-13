@@ -21,6 +21,8 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
+$section-color:         #f2eee6 !default;
+$footer-color:          #2c3235 !default;
 
 //== Scaffolding
 //
@@ -43,13 +45,13 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif:  "Segoe UI", "Proxima Nova", "Arial", sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          15px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -380,6 +382,7 @@ $navbar-collapse-max-height:       340px !default;
 $navbar-default-color:             #777 !default;
 $navbar-default-bg:                transparent !default;
 $navbar-default-border:            transparent !default;
+$navbar-bg-layer:                     rgba(78,89,95,.65);
 
 // Navbar links
 $navbar-default-link-color:                #fff !default;
@@ -396,10 +399,9 @@ $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 1
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           #ddd !default;
-$navbar-default-toggle-icon-bar-bg:        #888 !default;
+$navbar-default-toggle-hover-bg:           rgba(221,221,221,.4) !default;
+$navbar-default-toggle-icon-bar-bg:        #fff !default;
 $navbar-default-toggle-border-color:       #ddd !default;
-
 
 //=== Inverted navbar
 // Reset inverted navbar basics

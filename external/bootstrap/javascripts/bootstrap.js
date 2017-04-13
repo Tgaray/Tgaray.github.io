@@ -24,20 +24,6 @@ if (typeof jQuery === 'undefined') {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
-
- $(document).ready(function() {
-     $('#dropdown1').click(function() {
-         $('#dropdownicon1').toggleClass("glyphicon-triangle-bottom").toggleClass("glyphicon-triangle-top");
-     });
- });
-
- $(document).ready(function() {
-     $('#dropdown2').click(function() {
-         $('#dropdownicon2').toggleClass("glyphicon-triangle-bottom").toggleClass("glyphicon-triangle-top");
-     });
- });
-
-
 +function ($) {
   'use strict';
 

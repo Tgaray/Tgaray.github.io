@@ -16,38 +16,39 @@
     <link rel='stylesheet' href='external/fontawesome/css/font-awesome.min.css'>
     <script src='external/jquery/jquery-3.2.0.js'></script>
     <script src='external/bootstrap/javascripts/bootstrap.js'></script>
+    <script src='js/script.js'></script>
 </head>
 
 <body>
 
     <header>
         <div class='layer'>
-            <nav class='navbar navbar-default'>
-                <div class='container'>
-                    <div class='row'>
-                        <div class='navbar-header col-xs-12 col-sm-8'>
-                            <h4><a class='navbar-brand' href=''><img class='logo' src='img/logo0.png'>JouwWeb</a></h4>
-                            <ul class='nav navbar-nav first'>
-                                <li class='active'><a href='#'>Instructies</a></li>
-                                <li><a href='#'>Docent</a></li>
-                                <li><a href='#'>Help</a></li>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class='col-xs-12 col-sm-4'>
-                            <ul class='nav navbar-nav navbar-right'>
-                                <button style='margin-top: 8px;' type='submit' class='btn btn-success'>Starten</button>
-                            </ul>
-                        </div>
+            <div class="container">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <h4><a class='navbar-brand' href=''><img class='logo' src='img/logo0.png'>JouwWeb</a></h4>
                     </div>
-                </div>
-            </nav>
-            <div class='container-fluid'>
-                <article class='header-title'>
-                    <h1>JouwWeb op school</h1>
-                    <h3>Websites leren maken met de website-builder</h3>
-                </article>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" id="main-navigation">
+                            <li class="active"><a href="#">Instructies</a></li>
+                            <li><a href="#">Voor docenten</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
             </div>
+            </nav>
+
+            <article class='header-title'>
+                <h1>JouwWeb op school</h1>
+                <h3>Websites leren maken met de website-builder</h3>
+            </article>
+
         </div>
     </header>
 
@@ -82,7 +83,7 @@
 
             <div class='row'>
                 <div class='col-xs-1 col-md-3'></div>
-                <h2 class='section-header-start col-xs-10 col-md-6'>1 Beginnen met JouwWeb</h2>
+                <h2 class='section-header section-header--first col-xs-10 col-md-6'>1 Beginnen met JouwWeb</h2>
                 <div class='col-xs-1 col-md-3'></div>
             </div>
 
@@ -93,8 +94,8 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
 
                     <div class='panel panel-success'>
-                        <div id='dropdown1' class='panel-heading panel-heading--clickable collapsed' data-toggle='collapse' data-target='#group-icon-collapse1'>
-                            <span id='dropdownicon1' class='glyphicon glyphicon-triangle-bottom'></span> Opdracht 1
+                        <div class='panel-heading panel-heading--clickable collapsed' data-toggle='collapse' data-target='#group-icon-collapse1'>
+                            <span class='glyphicon glyphicon-triangle-bottom'></span> Opdracht 1
                         </div>
                         <div id='group-icon-collapse1' class='panel-collapse collapse'>
                             <div class='content--opdracht'>
@@ -137,17 +138,17 @@
                     </div>
                 </article>
             </div>
+            <div class='row'>
+                <article class='col-xs-12 col-md-6'>
+                    <h4 class='article-header'>Nog nooit een website?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </article>
 
-            <article class='col-xs-12 col-md-6'>
-                <h4 class='article-header'>Nog nooit een website?</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </article>
-
-            <article class='col-xs-12 col-md-6'>
-                <h4 class='article-header'>Nooit een website gemaakt?</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </article>
-
+                <article class='col-xs-12 col-md-6'>
+                    <h4 class='article-header'>Nooit een website gemaakt?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </article>
+            </div>
         </div>
     </section>
 
@@ -165,12 +166,50 @@
                     <img class='img-responsive' alt='' src='img/kiezen5.png'>
                     <h4 class='article-header'>Nog nooit een website?</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                    <div class='panel panel-success'>
+                        <div class='panel-heading panel-heading--clickable collapsed' data-toggle='collapse' data-target='#group-icon-collapse3'>
+                            <span class='glyphicon glyphicon-triangle-bottom'></span> Opdracht 1
+                        </div>
+                        <div id='group-icon-collapse3' class='panel-collapse collapse'>
+                            <div class='content--opdracht'>
+                                <h5>Opdracht Lorem ipsum</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <ol>
+                                    <li>Lorem ipsum dolor</li>
+                                    <li>Lorem ipsum dolorconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+                                    <li>Lorem ipsum dolor</li>
+                                    <li>Lorem ipsum dolorconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+                                    <li>Lorem ipsum dolor</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <article class='col-xs-12 col-md-6'>
                     <img class='img-responsive' alt='' src='img/kiezen5.png'>
                     <h4 class='article-header'>Nog nooit een website?</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                    <div class='panel panel-success'>
+                        <div class='panel-heading panel-heading--clickable collapsed' data-toggle='collapse' data-target='#group-icon-collapse4'>
+                            <span class='glyphicon glyphicon-triangle-bottom'></span> Opdracht 1
+                        </div>
+                        <div id='group-icon-collapse4' class='panel-collapse collapse'>
+                            <div class='content--opdracht'>
+                                <h5>Opdracht Lorem ipsum</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <ol>
+                                    <li>Lorem ipsum dolor</li>
+                                    <li>Lorem ipsum dolorconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+                                    <li>Lorem ipsum dolor</li>
+                                    <li>Lorem ipsum dolorconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+                                    <li>Lorem ipsum dolor</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </div>
             <div class='row'>
@@ -242,20 +281,20 @@
     </section>
 
     <footer>
-      <div class='container'>
-                  <ul class='footer-list footer-list-social'>
-                      <li>© Jouwweb <span class='hidden-xs'>- Torenallee 20 - 5617 BC Eindhoven</span></li>
-                      <li><a class='facebook-link' href='https://www.facebook.com/JouwWeb'><i class='fa fa-facebook'></i></a></li>
-                      <li><a class='twitter-link' href='https://twitter.com/JouwWeb'><i class='fa fa-twitter'></i></a></li>
-                  </ul>
-                  <ul class='footer-list footer-list-links'>
-                      <li>|  <a href='http://help.jouwweb.nl/help'>Help</a></li>
-                      <li>|  <a href='http://help.jouwweb.nl/contact'>Contact</a></li>
-                      <li>|  <a href='http://help.jouwweb.nl/over-ons'>Over ons</a></li>
-                      <li>|  <a href='http://help.jouwweb.nl/vacatures'>Vacatures</a></li>
-                      <li>|  <a href='http://help.jouwweb.nl/algemene-voorwaarden'>Voorwaarden</a></li>
-                  </ul>
-              </div>
+        <div class='container'>
+            <ul class='footer-list footer-list-social'>
+                <li>© Jouwweb <span class='hidden-xs hidden-sm'>- Torenallee 20 - 5617 BC Eindhoven</span></li>
+                <li><a class='facebook-link' href='https://www.facebook.com/JouwWeb'><i class='fa fa-facebook'></i></a></li>
+                <li><a class='twitter-link' href='https://twitter.com/JouwWeb'><i class='fa fa-twitter'></i></a></li>
+            </ul>
+            <ul class='footer-list footer-list-links'>
+                <li><a href='http://help.jouwweb.nl/support/home'>Help</a></li>
+                <li><a href='https://www.jouwweb.nl/contact'>Contact</a></li>
+                <li><a href='https://www.jouwweb.nl/over-ons'>Over ons</a></li>
+                <li><a href='https://www.jouwweb.nl/vacatures'>Vacatures</a></li>
+                <li><a href='https://www.jouwweb.nl/algemene-voorwaarden'>Voorwaarden</a></li>
+            </ul>
+        </div>
     </footer>
 
 </body>

@@ -1,4 +1,4 @@
-@import '../external/bootstrap/stylesheets/_bootstrap.scss'; // @import "../external/bootstrap/fonts/bootstrap";
+@import '../external/bootstrap/stylesheets/_bootstrap.scss'; // @import '../external/bootstrap/fonts/bootstrap';
 
 h1 {
     color: $font-color-h1;
@@ -21,7 +21,7 @@ h4 {
 
 header {
     text-align: center;
-    background-image: url("../img/0.png");
+    background-image: url('../img/0.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -192,7 +192,7 @@ footer {
 
     .footer-list-links {
         li:before {
-            content: " | ";
+            content: ' | ';
         }
 
         li:first-child:before {

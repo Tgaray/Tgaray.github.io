@@ -7924,7 +7924,7 @@ footer .footer-list-social li a {
 }
 
 footer .footer-list-links li:before {
-  content: " | ";
+  content: ' | ';
 }
 
 footer .footer-list-links li:first-child:before {

@@ -7844,10 +7844,6 @@ section .article-header {
   border-bottom: 1px solid #eeeeee;
 }
 
-section p {
-  margin-bottom: 20px;
-}
-
 section .img-responsive:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
@@ -7856,6 +7852,7 @@ section .img-responsive {
   border-radius: 3px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 section .panel-heading .glyphicon-triangle-bottom {
@@ -7945,7 +7942,7 @@ footer .footer-list-links li:first-child:before {
     height: auto;
   }
   header .navbar-toggle {
-    border: 0px;
+    border: 0;
     border-radius: 2px;
   }
   header .nav li {

@@ -103,12 +103,8 @@ section {
     .article-header {
         padding-bottom: 10px;
         margin-bottom: 10px;
-        margin-top:20px;
+        margin-top: 20px;
         border-bottom: 1px solid #eeeeee;
-    }
-
-    p {
-        margin-bottom: 20px;
     }
 
     .img-responsive:hover {
@@ -118,7 +114,8 @@ section {
     .img-responsive {
         border-radius: 3px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        margin-top:20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     .panel-heading {
@@ -139,6 +136,8 @@ section {
         text-align: left;
     }
 }
+
+
 
 .section-colored {
     background: $section-color;
@@ -216,7 +215,7 @@ footer {
         }
 
         .navbar-toggle {
-            border:0px;
+            border: 0;
             border-radius: 2px;
         }
 

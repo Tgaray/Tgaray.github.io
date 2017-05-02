@@ -7829,12 +7829,9 @@ section .section-header {
   text-align: center;
 }
 
-section .section-header--first {
-  margin-top: 50px;
-}
-
 section .container-embed {
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 section .article-header {

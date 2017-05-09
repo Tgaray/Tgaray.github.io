@@ -19,13 +19,27 @@ h4 {
     color: $font-color-h4;
 }
 
-header {
+h5 {
+
+}
+
+.studentbg {
     text-align: center;
-    background-image: url('../img/0.png');
+    background-image: url('../img/0.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
 
+.docentbg {
+    text-align: center;
+    background-image: url('../img/00.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
     .layer {
         background: $navbar-bg-layer;
         width: 100%;
@@ -83,11 +97,40 @@ header {
 
 section {
     text-align: left;
-    padding: 60px 0;
+    padding-top: 45px;
+    padding-bottom: 60px;
+
+    .navbar-header {
+        float: none;
+        margin-top: -20px;
+    }
+
+    .nav > li:first-child {
+        margin-top: 0;
+    }
+
+    .nav > li > a {
+        background-color: rgba(221, 221, 221, 0.4);
+        color: #84c0e4;
+        border-radius: 3px;
+        border: 1px solid #e6e6e6;
+        font-size: 13px;
+        line-height: 1.5;
+        padding: 10px !important;
+        margin: 20px auto 0;
+    }
+
+    .btn-group-sm > .btn,
+    .btn-sm {
+        margin-bottom: 20px;
+        margin-top: -10px;
+        color: #84c0e4;
+        padding: 10px !important;
+        list-style: none;
+    }
 
     .section-header {
-        margin-top: 0;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         border-bottom: 1px solid #eeeeee;
         text-align: center;
     }
@@ -129,12 +172,14 @@ section {
     }
 
     .content--opdracht {
-        padding: 0 30px;
+        padding: 10px 30px;
         text-align: left;
     }
 }
 
-
+.first {
+    margin-top: 30px;
+}
 
 .section-colored {
     background: $section-color;
@@ -236,10 +281,6 @@ footer {
             border-radius: 2px;
         }
 
-        .first {
-            margin-top: 90px;
-        }
-
         .header-title {
             margin-top: 0;
 
@@ -263,4 +304,34 @@ footer {
     .collapse {
         display: block;
     }
+
+    .noprint {
+        display: none;
+    }
+
+    .img-responsive {
+        width: 30%;
+        height: auto;
+    }
+}
+
+.sidebar-nav {
+    padding: 0;
+    max-height: none;
+    text-align: center;
+}
+
+.sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+}
+
+.sidebar-nav .navbar li {
+    float: none;
+    display: block;
+}
+
+.sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
 }

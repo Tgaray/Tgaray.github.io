@@ -7800,11 +7800,11 @@ header .navbar-nav {
 }
 
 header .navbar-nav li.active {
-  border-bottom: 4px solid #8bc53e;
+  border-bottom: 3px solid #8bc53e;
 }
 
 header .navbar-nav li:not(.active) {
-  padding-bottom: 4px;
+  padding-bottom: 3px;
 }
 
 header .navbar-nav li:not(.active):after {
@@ -7821,7 +7821,7 @@ header .navbar-nav li:not(.active):after {
 }
 
 header .navbar-nav li:hover:not(.active):after {
-  border-bottom: 4px solid #8bc53e;
+  border-bottom: 3px solid #8bc53e;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -7990,7 +7990,7 @@ footer .footer-list-links li:first-child:before {
     margin: 0 1px;
   }
   header .navbar-default .navbar-nav > .active > a {
-    border-bottom: 4px solid #8bc53e;
+    border-bottom: 3px solid #8bc53e;
     width: 70%;
     margin: 0 auto;
   }

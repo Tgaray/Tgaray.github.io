@@ -1,81 +1,60 @@
 
-/*ins.play-gif{
-	position: absolute;
-	font-family: Arial, sans serif;
-	width: 50px;
-	height: 50px;
-	line-height: 52px;
-	text-align: center;
-	background: #222;
-	font-size: 18px;
-	color: #fff;
-	border-radius: 50%;
-	opacity: .9;
-	border: 4px solid #fff;
-	cursor:pointer;
-	text-decoration: none;
-	/*opacity:0;*/
+ins.play-gif {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.gifplayer-wrapper:hover .play {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.play {
+    display: none;
+}
+
+.gif {
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.gp-gif-element {
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+/*.gifhover:after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: border 0.4s;
 }*/
 
-ins.play-gif:hover{
-	opacity:0;
-}
 
-.gifplayer{
-	border-radius: 3px;
-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-margin-top: 20px;
-margin-bottom: 30px;
-}
+/* .gifhover:hover:after{ //place this in your pseudo declaration to remove the hover
+top: 30%;
+    width: 0px;
+    height:0px;
+    border-left: 50px solid #f3f3f3;
+    border-top:  25px solid transparent;
+    border-bottom: 25px solid transparent;
+}*/
 
-.gp-gif-element{
-	border-radius: 3px;
-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-margin-top: 20px;
-margin-bottom: 30px;
-}
 
-.gifplayer-wrapper{
-	position:relative;
-	display: inline-block;
-}
+/*.gifhover:hover:after { //place this in your pseudo declaration to remove the hover
+    border-left-color:green;
+}*/
 
-.spinner {
-	height:50px;
-	width:50px;
-	margin:0px auto;
-	position:absolute;
-	top:50%;
-	left:50%;
-	margin-top:-25px;
-	margin-left:-25px;
-	-webkit-animation: rotation .6s infinite linear;
-	-moz-animation: rotation .6s infinite linear;
-	-o-animation: rotation .6s infinite linear;
-	animation: rotation .6s infinite linear;
-	border-left:6px solid rgba(256,256,256,.15);
-	border-right:6px solid rgba(256,256,256,.15);
-	border-bottom:6px solid rgba(256,256,256,.15);
-	border-top:6px solid rgba(256,256,256,.8);
-	border-radius:100%;
-}
 
-@-webkit-keyframes rotation {
-	from {-webkit-transform: rotate(0deg);}
-	to {-webkit-transform: rotate(359deg);}
-}
-
-@-moz-keyframes rotation {
-	from {-moz-transform: rotate(0deg);}
-	to {-moz-transform: rotate(359deg);}
-}
-
-@-o-keyframes rotation {
-	from {-o-transform: rotate(0deg);}
-	to {-o-transform: rotate(359deg);}
-}
-
-@keyframes rotation {
-	from {transform: rotate(0deg);}
-	to {transform: rotate(359deg);}
-}
+/*.gif:hover{
+	-webkit-clip-path: polygon(23% 30%, 23% 66%, 44% 49%);
+	clip-path: polygon(23% 30%, 23% 66%, 44% 49%);
+}*/

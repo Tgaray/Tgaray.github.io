@@ -78,10 +78,10 @@ $('body').css('display','block');
 
 		addControl: function(){
 			var label = this.getOption('');
-			this.playElement = $("<ins class='play-gif'>" +  + "</ins>");
+			this.playElement = $("<ins class='play-gif'>" + "<img class='play'  src='img/play6.png'>" + "</ins>");
 			this.wrapper.append(this.playElement);
-			this.playElement.css('top', this.previewElement.height()/2 - this.playElement.height()/2);
-			this.playElement.css('left', this.previewElement.width()/2 - this.playElement.width()/2);
+			this.playElement.css('top', this.previewElement.height()/3.5 - this.playElement.height()/3.5);
+			this.playElement.css('left', this.previewElement.width()/100 - this.playElement.width()/100);
 		},
 
 		addEvents: function(){
